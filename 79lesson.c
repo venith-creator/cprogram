@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+typedef struct complex{
+    double real;
+    double imagine;
+} complex;
+
+int main(){
+
+    complex c1 = {.real = 22, .imagine = 49.64};
+    complex c2 = {.real = 20, .imagine = 59.00};
+
+    complex sum;
+    sum.real = c1.real + c2.real;
+    sum.imagine = c1.imagine + c2.imagine;
+    printf("Result is %.2lf + %.2lfi", sum.real, sum.imagine);
+
+    return 0;
+}
